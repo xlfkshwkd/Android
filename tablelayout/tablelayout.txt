@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView">
+    </TextView>
+    <TableRow>
+        <TextView
+            android:text="계산 결과: "
+            android:textColor="#121111" />
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:textColor="#FF0000"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="1"
+            android:id="@+id/num1"
+            />
+        <Button
+            android:text="2"
+            android:id="@+id/num2"/>
+        <Button
+            android:text="3"
+            android:id="@+id/num3"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="4"
+            android:id="@+id/num4"/>
+        <Button
+            android:text="5"
+            android:id="@+id/num5"/>
+        <Button
+            android:text="6"
+            android:id="@+id/num6"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="7"
+            android:id="@+id/num7"/>
+        <Button
+            android:text="8"
+            android:id="@+id/num8"/>
+        <Button
+            android:text="9"
+            android:id="@+id/num9"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/num0"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/Add"
+            android:text="+"
+            />
+        <Button
+            android:id="@+id/Sub"
+            android:text="-" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="/"
+            android:id="@+id/Div" />
+        <Button
+            android:text="*"
+            android:id="@+id/Mul" />
+        <Button
+            android:text="clear"
+            android:id="@+id/clear"
+            />
+    </TableRow>
+    <TableRow>
+    <Button
+        android:text="OK"
+        android:id="@+id/buttonPanel" />
+    </TableRow>
+
+</TableLayout>
