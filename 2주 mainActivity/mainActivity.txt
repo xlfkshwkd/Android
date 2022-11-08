@@ -1,0 +1,47 @@
+package com.example.myapplicatio2;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        final EditText eText;
+        Button btn;
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_main);
+        eText=(EditText) findViewById(R.id.edit3);
+        btn=(Button)findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v ){
+                String str =eText.getText().toString();
+                Toast.makeText (getBaseContext(),str,Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+    /*
+    public void onClick(View target){
+        EditText eText5;
+        eText5 = (EditText) findViewById(R.id.edit5);
+        eText5.setText("");
+    }*/
+    public void onClick2(View target){
+        EditText eText5;
+        eText5 = (EditText) findViewById(R.id.edit5);
+        eText5.setText(null);
+    }
+    public void onClick3(View target){
+        EditText eText5;
+        eText5 = (EditText) findViewById(R.id.edit5);
+        eText5.setTextColor(Color.BLUE);
+    }
+
+}

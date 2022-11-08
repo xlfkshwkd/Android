@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="패스워드"
+        android:inputType="numberPassword"/>
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="010-xxxx-0326"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="문자 출력 " />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick2"
+        android:text="지우기" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="파라색 변경 " />
+
+
+</LinearLayout>
