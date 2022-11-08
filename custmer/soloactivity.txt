@@ -1,0 +1,24 @@
+package com.example.a2022_view;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class soloactivity extends AppCompatActivity {
+    Button btnSecond;
+    TextView Name, Num;
+    ImageView Img;
+    protected  void onCreate(Bundle savedInstanceState){
+    btnSecond.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick (View v){
+        finish();
+        }
+    });
+}
+}
+

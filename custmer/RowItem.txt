@@ -1,0 +1,16 @@
+package com.example.a2022_view;
+
+public class RowItem {
+    private int imgId;
+    private String name;
+    private String phoneNo;
+    public RowItem(int imgId,String name ,String phoneNo) {
+        this.imgId = imgId;
+        this.name =name;
+        this.phoneNo= phoneNo;
+    }
+    public  int getImgId() {return imgId;}
+    public String getName() {return  name;}
+    public String getPhoneNo() {return phoneNo;}
+
+}
