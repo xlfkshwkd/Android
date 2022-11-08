@@ -1,0 +1,38 @@
+package com.example.a4wnck;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.RadioGroup;
+
+public class MainActivity extends AppCompatActivity {
+    private RadioGroup rg;
+    private ImageView img;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        rg = (RadioGroup) findViewById(R.id.radioGroup);
+        img = (ImageView) findViewById(R.id.imageView);
+
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedld) {
+                String result;
+                if (checkedld == R.id.radioButton1) {
+                    img.setImageResource(R.drawable.bonobono);
+                }
+                if (checkedld == R.id.radioButton2) {
+                    img.setImageResource(R.drawable.coffee);
+                } else {
+                    img.setImageResource(R.drawable.bonobono);
+                }
+
+            }
+        });
+    }
+}
